@@ -12,57 +12,99 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
-import { Code, Briefcase, Calendar, Mail, Github, Linkedin, Twitter, Menu, X, Monitor, Cpu, ShieldAlert, Sparkle, Loader2, Layers, Aperture, Coffee, Rocket, Palette } from 'lucide-react'
+import { Code, Briefcase, Calendar, Mail, Github, Linkedin, Twitter,
+    Menu, X, Monitor, Cpu, Sparkle, Loader2, Layers, Aperture, Coffee,
+    Rocket, Palette, ShieldAlert, User, Settings, Bell, ChartBar, Clipboard,
+    Cloud, DollarSign, FileText, Folder, Heart, Key, Lock, MapPin, Search,
+    ShoppingCart, Star, Tag, ThumbsUp, Trash, Users } from 'lucide-react'
 
 const projects = [
     {
         id: 1,
-        title: 'Fibonacci Heap (Java)',
+        title: 'Fibonacci Heap',
         description:
-            'Implemented an advanced Fibonacci Heap data structure in Java, demonstrating efficient priority queue operations, amortized complexities, and a solid understanding of recursive tree linking.',
-        image: '/placeholder.svg?height=300&width=400',
-        tags: ['Java', 'Data Structures', 'Algorithms']
+            'Implemented a Fibonacci Heap data structure in Java, showcasing efficient priority queue operations, amortized complexities, and a deep understanding of advanced data structures. This structure supports mergeable heaps efficiently, and can significantly reduce the complexity of certain graph and optimization algorithms.',
+        images: [
+            '/fib-heap/fib-heap1.png',
+            '/fib-heap/fib-heap2.png'
+        ],
+        tags: ['Java', 'Data Structures', 'Algorithms'],
+        github: 'https://github.com/pkurto16/FibHeap',
+        devpost: ''
     },
     {
         id: 2,
-        title: 'SwipeSwap (Firebase + Flutter)',
+        title: 'SwipeSwap',
         description:
-            'A mobile application that facilitates the easy exchange of goods and services. Built during a collegiate hackathon, it leverages Flutter for a seamless UI and Firebase for real-time database interactions.',
-        image: '/placeholder.svg?height=300&width=400',
-        tags: ['Flutter', 'Firebase', 'UX Design']
+            'A mobile application enabling frictionless exchanges of meal swipes. Built during a collegiate hackathon, it uses Flutter for a fluid UI, Firebase for real-time data, and Cloud Functions for backend logic. Users can list dining halls, set prices, buy and sell swipes, and enjoy seamless integration with Google Maps for location context.',
+        images: [
+            '/swipe-swap/swipe-swap1.jpg',
+            '/swipe-swap/swipe-swap2.jpg'
+        ],
+        tags: [
+            'Dart', 'Firebase', 'Firestore', 'Flutter', 'Google Cloud', 'Google Maps', 'JavaScript', 'Node.js'
+        ],
+        github: 'https://github.com/Swipe-Swap',
+        devpost: 'https://devpost.com/software/swipeswap'
     },
     {
         id: 3,
-        title: 'Boiler Schedulings (React + Flask + Gemini API + Vector DB)',
+        title: 'Purdue Schedulings',
         description:
-            'A web application designed to automate and optimize course scheduling at Purdue University. Integrates React for the frontend, Flask for the backend, Gemini APIs, and vector databases for intelligent course recommendations.',
-        image: '/placeholder.svg?height=300&width=400',
-        tags: ['React', 'Flask', 'Gemini API', 'Vector DB']
+            'A web application that harnesses advanced AI techniques, Retrieval Augmented Generation (RAG), and vector databases to optimize course scheduling at Purdue. By integrating React, Flask, Gemini AI, ChromaDB, and Firebase, it provides dynamic widgets, real-time interaction, and intelligent recommendations based on the Purdue course catalog, professor ratings, and average GPA data.',
+        images: [
+            '/boiler-schedulings/boiler-schedulings1.jpg',
+            '/boiler-schedulings/boiler-schedulings2.jpg'
+        ],
+        tags: [
+            'React', 'Flask', 'Gemini', 'RAG', 'ChromaDB', 'Firebase', 'Node.js', 'Python', 'HuggingFace', 'Auth'
+        ],
+        github: 'https://github.com/Boiler-Schedulings',
+        devpost: 'https://devpost.com/software/purdue-schedulings'
     },
     {
         id: 4,
-        title: 'DartFrog (React + Firebase + Flask + Gemini API)',
+        title: 'DartFrog',
         description:
-            'Hackathon project combining a React front-end with a Flask backend, Firebase storage, and Gemini APIs. Offers dynamic content retrieval and real-time data updates for an enhanced user experience.',
-        image: '/placeholder.svg?height=300&width=400',
-        tags: ['React', 'Firebase', 'Flask', 'Gemini API']
+            'An AI-driven data analysis tool designed for non-technical users. DartFrog uses React, Flask, Firebase, and Gemini AI to automatically generate charts, summaries, and insights from uploaded CSVs. This hackathon project focuses on simplifying data exploration, offering intuitive visualization and conversational querying to help users quickly understand their data.',
+        images: [
+            '/dartfrog/dartfrog1.jpg',
+            '/dartfrog/dartfrog2.jpg',
+            '/dartfrog/dartfrog3.jpg',
+            '/dartfrog/dartfrog4.jpg'
+        ],
+        tags: ['React', 'Firebase', 'Flask', 'Gemini', 'Python', 'RAG', 'Chart.js'],
+        github: 'https://github.com/DartFrogHackillinois',
+        devpost: 'https://devpost.com/software/dartfrog'
     },
     {
         id: 5,
-        title: 'Tale (React + Firebase + Flask + OpenAI API)',
+        title: 'Tale',
         description:
-            'An AI-powered language learning assistant that won 2nd place at a major AI startup hackathon. Utilizes OpenAI’s API for personalized lessons, real-time translation, and a seamless user experience.',
-        image: '/placeholder.svg?height=300&width=400',
-        tags: ['React', 'Firebase', 'OpenAI API', 'AI']
+            'A language learning companion that leverages OpenAI’s API, Flask, and Firebase to provide personalized, conversational practice. Tale (formerly Lingua Learner) focuses on natural interaction, offering feedback on tone, pace, and sentiment. It integrates Whisper for audio analysis, enabling users to improve fluency and pronunciation through immersive, everyday conversations.',
+        images: [
+            '/tale/tale1.png',
+            '/tale/tale2.png'
+        ],
+        tags: ['React', 'Firebase', 'Flask', 'OpenAI API', 'Whisper', 'Hark', 'AI', 'Audio'],
+        github: 'https://github.com/taletech',
+        devpost: 'https://devpost.com/software/lingua-learner'
     },
     {
         id: 6,
-        title: 'X Parks the Spot (Next.js + Redux + MSW + Shadcn + Flask + PostgreSQL)',
+        title: 'X Parks the Spot',
         description:
-            'A Fall 2024 project focusing on location-based solutions for optimal parking experiences. Combines Next.js for SSR, Redux for state management, Shadcn UI for modern styling, and a Flask + PostgreSQL backend.',
-        image: '/placeholder.svg?height=300&width=400',
-        tags: ['Next.js', 'Redux', 'Flask', 'PostgreSQL']
-    },
+            'A location-based platform designed to streamline the search for parking spots. Incorporating a React-based PWA front-end with Next.js for SSR, Redux for state management, MSW for request mocking, Shadcn UI, and a Flask + PostgreSQL backend. It includes Redis for authentication, S3 for object storage, and Stripe for payment transactions, connecting users and parking spot owners in a C2C model.',
+        images: [
+            '/xpark/xpark1.png',
+            '/xpark/xpark2.png'
+        ],
+        tags: [
+            'React', 'PWA', 'Next.js', 'Redux', 'MSW', 'Shadcn', 'Flask', 'PostgreSQL', 'Redis', 'S3', 'Stripe'
+        ],
+        github: '',
+        devpost: ''
+    }
 ]
 
 const timelineEvents = [
@@ -71,31 +113,31 @@ const timelineEvents = [
         date: 'Pre-2020',
         title: 'Foundations in Computing',
         description:
-            'Explored Scratch coding, participated in FLL robotics, and learned JavaScript via Khan Academy. Won 1st place at the state level for the “Game On” event in Science Olympiad (2019).',
+            'Explored Scratch coding, engaged in FLL robotics, learned JavaScript via Khan Academy, and won state-level recognition in the “Game On” Science Olympiad event.',
         icon: Code
     },
     {
         id: 2,
-        date: '2020 – 2021',
+        date: '2020-2021 Academic Year',
         title: 'Building with Java',
         description:
-            'Transitioned to Java, mastering OOP principles, recursion, and creating projects like an evolution simulator, solidifying core programming skills.',
+            'Focused on core programming skills, mastering OOP concepts and recursion, and building foundational projects like an evolution simulator.',
         icon: Code
     },
     {
         id: 3,
-        date: '2022',
-        title: 'Hands-On Engineering',
+        date: 'Summer 2022',
+        title: 'Hands-On Engineering at FirstBuild',
         description:
-            'Interned at FirstBuild, blending hardware and software solutions. Gained practical experience with sensors, APIs, and 3D-printed devices.',
+            'Interned at FirstBuild, integrating hardware and software. Created 3D-printed sensors, leveraged APIs, and gained practical engineering experience.',
         icon: Briefcase
     },
     {
         id: 4,
-        date: '2022 – 2023',
+        date: '2022-2023 Academic Year',
         title: 'Advanced Data Structures & Algorithms',
         description:
-            'Took a rigorous high school DSA course. Implemented AVL Trees, Tries, and a Fibonacci Heap. Strengthened fundamental CS problem-solving techniques.',
+            'Undertook a rigorous DSA course. Implemented AVL Trees, Tries, and Fibonacci Heaps, strengthening algorithmic problem-solving skills.',
         icon: Code
     },
     {
@@ -103,25 +145,33 @@ const timelineEvents = [
         date: 'Summer 2023',
         title: 'SmartHome AI at GE Appliances',
         description:
-            'Developed a recipe scraping REST API, contributed to ChatGPT@GEA features, and enhanced backend infrastructure. Recognized by the CTO for significant impact.',
+            'Developed a recipe scraping REST API, integrated ChatGPT-based features, and improved backend infrastructure. Earned recognition for significant contributions.',
         icon: Briefcase
     },
     {
         id: 6,
-        date: 'Fall 2023',
-        title: 'Purdue CS & Hackathons',
+        date: '2023-2024 Academic Year',
+        title: 'Collegiate Hackathons & Purdue CS',
         description:
-            'Started CS at Purdue with advanced standing. Built hackathon projects like “SwipeSwap” (Hello World Hackathon) and “Boiler Schedulings” (BoilerMake), while joining Purdue ARC.',
+            'Advanced in Purdue’s CS program and participated in multiple collegiate hackathons. Gained practical experience and achieved 2nd place at a major AI startup competition. Joined Purdue ARC to work on robotics and software innovation.',
         icon: Code
     },
     {
         id: 7,
-        date: '2024',
+        date: 'Summer 2024',
+        title: 'Core IoT at GE Appliances',
+        description:
+            'Interned at GE Appliances Core IoT, focusing on large-scale over-the-air updates, predictive modeling, and secure automation for millions of connected appliances.',
+        icon: Briefcase
+    },
+    {
+        id: 8,
+        date: '2024-Present',
         title: 'Scaling Up and Innovating',
         description:
-            'Participated in Hack Illinois (DartFrog) and Catapult AI Startup (Tale), earning 2nd place. Interned at GE Appliances Core IoT, then developed “X Parks the Spot” in Fall 2024.',
+            'Continuing development with Purdue ARC and building solutions like “X Parks the Spot.” Further expanding technical leadership, exploring advanced AI and automation initiatives.',
         icon: Rocket
-    },
+    }
 ]
 
 
@@ -222,9 +272,38 @@ export default function Home() {
 }
 
 function BackgroundDecorations() {
-    // Just some random floating Lucide icons as background decorations
-    const icons = [ShieldAlert, Sparkle, Layers, Coffee, Rocket, Palette]
-    // For simplicity, map a few random icons as absolutely positioned floating icons
+    const icons = [
+        ShieldAlert,
+        Sparkle,
+        Layers,
+        Coffee,
+        Rocket,
+        Palette,
+        Briefcase,
+        User,
+        Settings,
+        Bell,
+        Calendar,
+        ChartBar,
+        Clipboard,
+        Cloud,
+        Code,
+        DollarSign,
+        FileText,
+        Folder,
+        Heart,
+        Key,
+        Lock,
+        MapPin,
+        Search,
+        ShoppingCart,
+        Star,
+        Tag,
+        ThumbsUp,
+        Trash,
+        Users
+    ];
+
     return (
         <div className="pointer-events-none fixed inset-0 overflow-hidden">
             {icons.map((Icon, i) => (
@@ -312,7 +391,7 @@ function Projects() {
                         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
                             <Sparkle className="inline-block w-8 h-8 text-primary mb-1" /> My Projects
                         </h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
                             {projects.map((project, index) => (
                                 <ProjectCard key={project.id} project={project} index={index} />
                             ))}
@@ -325,7 +404,18 @@ function Projects() {
 }
 
 function ProjectCard({ project, index }) {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0)
     const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 })
+
+    const handleNext = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % project.images.length)
+    }
+
+    const handlePrev = () => {
+        setCurrentImageIndex((prevIndex) =>
+            prevIndex === 0 ? project.images.length - 1 : prevIndex - 1
+        )
+    }
 
     return (
         <motion.div
@@ -334,28 +424,62 @@ function ProjectCard({ project, index }) {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: index * 0.1 }}
         >
-            <Card className="overflow-hidden border border-slate-700 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <Card className="flex flex-col h-full min-h-[600px] overflow-hidden border border-slate-700 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                 <CardHeader className="p-0 relative">
-                    <div className="absolute top-2 left-2 flex space-x-2">
-                        <Badge variant="outline" className="bg-black/50 text-white">NEW</Badge>
-                        <Badge variant="outline" className="bg-black/50 text-white">🔥</Badge>
+                    <div className="relative w-full h-48 overflow-hidden flex items-center justify-center bg-black">
+                        <Image
+                            src={project.images[currentImageIndex]}
+                            alt={project.title}
+                            width={400}
+                            height={300}
+                            className="object-cover w-full h-48"
+                        />
+                        {project.images.length > 1 && (
+                            <>
+                                <button
+                                    onClick={handlePrev}
+                                    className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/70 text-white rounded-full p-2 hover:bg-black/90"
+                                    aria-label="Previous Image"
+                                >
+                                    ‹
+                                </button>
+                                <button
+                                    onClick={handleNext}
+                                    className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/70 text-white rounded-full p-2 hover:bg-black/90"
+                                    aria-label="Next Image"
+                                >
+                                    ›
+                                </button>
+                            </>
+                        )}
                     </div>
-                    <Image
-                        src={project.image}
-                        alt={project.title}
-                        width={400}
-                        height={300}
-                        className="w-full h-48 object-cover"
-                    />
                 </CardHeader>
-                <CardContent className="p-6">
+                <CardContent className="p-6 flex-grow">
                     <CardTitle>{project.title}</CardTitle>
-                    <CardDescription className="mt-2">{project.description}</CardDescription>
+                    <CardDescription className="mt-2 line-clamp-10">{project.description}</CardDescription>
                 </CardContent>
-                <CardFooter className="flex flex-wrap gap-2 p-6 pt-0">
-                    {project.tags.map((tag) => (
-                        <Badge key={tag} variant="secondary">{tag}</Badge>
-                    ))}
+                <CardFooter className="flex flex-wrap gap-2 p-6 pt-0 justify-between items-center mt-auto">
+                    <div className="flex flex-wrap gap-2">
+                        {project.tags.map((tag) => (
+                            <Badge key={tag} variant="secondary">{tag}</Badge>
+                        ))}
+                    </div>
+                    <div className="flex space-x-4">
+                        {project.github && (
+                            <Link href={project.github} target="_blank" rel="noopener noreferrer" aria-label={`${project.title} GitHub`}>
+                                <Button variant="ghost" size="icon">
+                                    <Github className="w-5 h-5" />
+                                </Button>
+                            </Link>
+                        )}
+                        {project.devpost && (
+                            <Link href={project.devpost} target="_blank" rel="noopener noreferrer" aria-label={`${project.title} Devpost`}>
+                                <Button variant="ghost" size="icon">
+                                    <Aperture className="w-5 h-5" />
+                                </Button>
+                            </Link>
+                        )}
+                    </div>
                 </CardFooter>
             </Card>
         </motion.div>
@@ -467,18 +591,13 @@ function Footer() {
                     </p>
                     <div className="flex space-x-4">
                         <Button variant="ghost" size="icon" asChild>
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <a href="https://github.com/pkurto16" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                                 <Github className="w-5 h-5" />
                             </a>
                         </Button>
                         <Button variant="ghost" size="icon" asChild>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <a href="https://www.linkedin.com/in/peter-kurto-870660250/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                 <Linkedin className="w-5 h-5" />
-                            </a>
-                        </Button>
-                        <Button variant="ghost" size="icon" asChild>
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                                <Twitter className="w-5 h-5" />
                             </a>
                         </Button>
                     </div>
