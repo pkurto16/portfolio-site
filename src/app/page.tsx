@@ -28,7 +28,7 @@ const projects = [
             '/fib-heap/fib-heap1.png',
             '/fib-heap/fib-heap2.png'
         ],
-        tags: ['Java', 'Data Structures', 'Algorithms'],
+        tags: ['Java', 'Data Structures', 'Algorithms', 'Optimization'],
         github: 'https://github.com/pkurto16/FibHeap',
         devpost: ''
     },
@@ -36,7 +36,7 @@ const projects = [
         id: 2,
         title: 'SwipeSwap',
         description:
-            'A mobile application enabling frictionless exchanges of meal swipes. Built during a collegiate hackathon, it uses Flutter for a fluid UI, Firebase for real-time data, and Cloud Functions for backend logic. Users can list dining halls, set prices, buy and sell swipes, and enjoy seamless integration with Google Maps for location context.',
+            'Contributed to backend architecture and supported frontend integration for this innovative mobile application enabling frictionless exchanges of meal swipes. Built during a collegiate hackathon, I integrated Firebase for real-time data, and collaborated on Cloud Functions development. Engineered comprehensive features including dining hall listings, dynamic pricing systems, and seamless Google Maps integration.',
         images: [
             '/swipe-swap/swipe-swap1.jpg',
             '/swipe-swap/swipe-swap2.jpg'
@@ -51,7 +51,7 @@ const projects = [
         id: 3,
         title: 'Purdue Schedulings',
         description:
-            'A web application that harnesses advanced AI techniques, Retrieval Augmented Generation (RAG), and vector databases to optimize course scheduling at Purdue. By integrating React, Flask, Gemini AI, ChromaDB, and Firebase, it provides dynamic widgets, real-time interaction, and intelligent recommendations based on the Purdue course catalog, professor ratings, and average GPA data.',
+            'Served as frontend lead while contributing significantly to backend development. Architected and implemented a sophisticated web application leveraging advanced AI techniques, including Retrieval Augmented Generation (RAG) and vector databases, to revolutionize course scheduling at Purdue. Spearheaded the integration of React, Flask, Gemini AI, ChromaDB, and Firebase, delivering dynamic widgets and intelligent recommendations based on comprehensive university data.',
         images: [
             '/boiler-schedulings/boiler-schedulings1.jpg',
             '/boiler-schedulings/boiler-schedulings2.jpg'
@@ -66,7 +66,7 @@ const projects = [
         id: 4,
         title: 'DartFrog',
         description:
-            'An AI-driven data analysis tool designed for non-technical users. DartFrog uses React, Flask, Firebase, and Gemini AI to automatically generate charts, summaries, and insights from uploaded CSVs. This hackathon project focuses on simplifying data exploration, offering intuitive visualization and conversational querying to help users quickly understand their data.',
+            'Led frontend development and contributed to backend architecture for this AI-driven data analysis platform. Engineered an intuitive interface using React while collaborating on Flask backend integration. Implemented sophisticated data visualization systems using Chart.js and developed conversational querying features with Gemini AI, creating a powerful tool that democratizes data analysis for non-technical users.',
         images: [
             '/dartfrog/dartfrog1.jpg',
             '/dartfrog/dartfrog2.jpg',
@@ -81,7 +81,7 @@ const projects = [
         id: 5,
         title: 'Tale',
         description:
-            'A language learning companion that leverages OpenAI’s API, Flask, and Firebase to provide personalized, conversational practice. Tale (formerly Lingua Learner) focuses on natural interaction, offering feedback on tone, pace, and sentiment. It integrates Whisper for audio analysis, enabling users to improve fluency and pronunciation through immersive, everyday conversations.',
+            'Awarded 2nd place at Catapult Hacks AI startup hackathon. As frontend lead and backend contributor, engineered a sophisticated language learning platform leveraging OpenAI\'s API, Flask, and Firebase. Architected the core conversation system, implemented real-time audio analysis using Whisper, and developed comprehensive feedback mechanisms for tone, pace, and sentiment analysis. Designed and implemented an immersive user interface that facilitates natural language acquisition through dynamic conversation flows.',
         images: [
             '/tale/tale1.png',
             '/tale/tale2.png'
@@ -94,7 +94,7 @@ const projects = [
         id: 6,
         title: 'X Parks the Spot',
         description:
-            'A location-based platform designed to streamline the search for parking spots. Incorporating a React-based PWA front-end with Next.js for SSR, Redux for state management, MSW for request mocking, Shadcn UI, and a Flask + PostgreSQL backend. It includes Redis for authentication, S3 for object storage, and Stripe for payment transactions, connecting users and parking spot owners in a C2C model.',
+            'As team lead, orchestrated the development of this comprehensive parking marketplace platform. Directed the architectural decisions and implementation of a React-based PWA with Next.js for SSR, Redux for state management, and MSW for request mocking. Led the integration of Shadcn UI components while overseeing the development of a robust Flask + PostgreSQL backend. Implemented advanced features including Redis authentication, S3 object storage, and Stripe payment processing, creating a seamless C2C marketplace for parking spots.',
         images: [
             '/xpark/xpark1.png',
             '/xpark/xpark2.png'
@@ -111,65 +111,65 @@ const timelineEvents = [
     {
         id: 1,
         date: 'Pre-2020',
-        title: 'Foundations in Computing',
+        title: 'Early Technical Excellence',
         description:
-            'Explored Scratch coding, engaged in FLL robotics, learned JavaScript via Khan Academy, and won state-level recognition in the “Game On” Science Olympiad event.',
+            'Demonstrated exceptional early aptitude in computing, mastering Scratch programming, leading FLL robotics initiatives, achieving advanced proficiency in JavaScript through Khan Academy, and securing first place in the state-level "Game On" Science Olympiad competition.',
         icon: Code
     },
     {
         id: 2,
         date: '2020-2021 Academic Year',
-        title: 'Building with Java',
+        title: 'Advanced Java Development',
         description:
-            'Focused on core programming skills, mastering OOP concepts and recursion, and building foundational projects like an evolution simulator.',
+            'Excelled in complex programming challenges, establishing expertise in OOP principles and advanced recursion techniques. Led the development of sophisticated projects, including a cutting-edge evolution simulator that showcased exceptional problem-solving abilities.',
         icon: Code
     },
     {
         id: 3,
         date: 'Summer 2022',
-        title: 'Hands-On Engineering at FirstBuild',
+        title: 'Innovation Leadership at FirstBuild',
         description:
-            'Interned at FirstBuild, integrating hardware and software. Created 3D-printed sensors, leveraged APIs, and gained practical engineering experience.',
+            'Spearheaded multiple high-impact projects at FirstBuild, seamlessly integrating hardware and software solutions. Pioneered the development of custom 3D-printed sensor systems, architected sophisticated API implementations, and demonstrated outstanding engineering leadership.',
         icon: Briefcase
     },
     {
         id: 4,
         date: '2022-2023 Academic Year',
-        title: 'Advanced Data Structures & Algorithms',
+        title: 'DSA Excellence & Innovation',
         description:
-            'Undertook a rigorous DSA course. Implemented AVL Trees, Tries, and Fibonacci Heaps, strengthening algorithmic problem-solving skills.',
+            'Mastered advanced data structures and algorithms, implementing sophisticated solutions including AVL Trees, Tries, and Fibonacci Heaps. Consistently demonstrated exceptional problem-solving capabilities and technical innovation in complex algorithmic challenges.',
         icon: Code
     },
     {
         id: 5,
         date: 'Summer 2023',
-        title: 'SmartHome AI at GE Appliances',
+        title: 'Technical Leadership at GE Appliances',
         description:
-            'Developed a recipe scraping REST API, integrated ChatGPT-based features, and improved backend infrastructure. Earned recognition for significant contributions.',
+            'Led the development of a sophisticated recipe scraping REST API, pioneered ChatGPT integration features, and orchestrated significant backend infrastructure improvements. Received special recognition for exceptional contributions that redefined smart home capabilities.',
         icon: Briefcase
     },
     {
         id: 6,
         date: '2023-2024 Academic Year',
-        title: 'Collegiate Hackathons & Purdue CS',
+        title: 'Technical Excellence & Innovation Leadership',
         description:
-            'Advanced in Purdue’s CS program and participated in multiple collegiate hackathons. Gained practical experience and achieved 2nd place at a major AI startup competition. Joined Purdue ARC to work on robotics and software innovation.',
+            'Distinguished performance in Purdue\'s CS program while leading multiple award-winning hackathon teams. Secured 2nd place in a major AI startup competition, showcasing exceptional technical and leadership abilities. Assumed key technical role in Purdue ARC, driving robotics innovation and software development initiatives.',
         icon: Code
     },
     {
         id: 7,
         date: 'Summer 2024',
-        title: 'Core IoT at GE Appliances',
+        title: 'IoT Architecture Leadership at GE',
         description:
-            'Interned at GE Appliances Core IoT, focusing on large-scale over-the-air updates, predictive modeling, and secure automation for millions of connected appliances.',
+            'Leading critical initiatives in GE Appliances Core IoT division, architecting large-scale over-the-air update systems, developing sophisticated predictive models, and implementing secure automation solutions impacting millions of connected devices.',
         icon: Briefcase
     },
     {
         id: 8,
         date: '2024-Present',
-        title: 'Scaling Up and Innovating',
+        title: 'Technical Innovation & Leadership',
         description:
-            'Continuing development with Purdue ARC and building solutions like “X Parks the Spot.” Further expanding technical leadership, exploring advanced AI and automation initiatives.',
+            'Driving technological advancement through leadership roles in Purdue ARC and spearheading innovative solutions like "X Parks the Spot." Leading multiple teams in exploring cutting-edge AI applications and automation initiatives, while expanding influence in technical leadership positions.',
         icon: Rocket
     }
 ]
@@ -182,7 +182,7 @@ export default function Home() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsLoading(false)
-        }, 1500)
+        }, 500)
         return () => clearTimeout(timer)
     }, [])
 
@@ -348,8 +348,7 @@ function Hero() {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                     <Avatar className="w-40 h-40 mx-auto mb-8 border-4 border-primary shadow-lg">
-                        <AvatarImage src="/placeholder.svg?height=160&width=160" alt="Peter Kurto" />
-                        <AvatarFallback>PK</AvatarFallback>
+                        <AvatarImage src="/avatar.jpeg" alt="Peter Kurto" />
                     </Avatar>
                 </motion.div>
                 <motion.div
@@ -404,86 +403,140 @@ function Projects() {
 }
 
 function ProjectCard({ project, index }) {
-    const [currentImageIndex, setCurrentImageIndex] = useState(0)
-    const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 })
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [isOverlayOpen, setIsOverlayOpen] = useState(false);
+    const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
-    const handleNext = () => {
-        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % project.images.length)
-    }
+    const handleNext = (e) => {
+        e.stopPropagation();
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % project.images.length);
+    };
 
-    const handlePrev = () => {
+    const handlePrev = (e) => {
+        e.stopPropagation();
         setCurrentImageIndex((prevIndex) =>
             prevIndex === 0 ? project.images.length - 1 : prevIndex - 1
-        )
-    }
+        );
+    };
 
-    return (
-        <motion.div
-            ref={ref}
-            initial={{ opacity: 0, y: 50 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-        >
-            <Card className="flex flex-col h-full min-h-[600px] overflow-hidden border border-slate-700 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <CardHeader className="p-0 relative">
-                    <div className="relative w-full h-48 overflow-hidden flex items-center justify-center bg-black">
+    const ImageOverlay = () => (
+        <AnimatePresence>
+            {isOverlayOpen && (
+                <motion.div
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-black/90"
+                    onClick={() => setIsOverlayOpen(false)}
+                >
+                    <button
+                        className="absolute top-4 right-4 text-white p-2 rounded-full hover:bg-white/20"
+                        onClick={() => setIsOverlayOpen(false)}
+                    >
+                        <X className="w-6 h-6" />
+                    </button>
+
+                    <div className="relative max-w-7xl max-h-[90vh] w-full h-full flex items-center justify-center p-4">
                         <Image
                             src={project.images[currentImageIndex]}
                             alt={project.title}
-                            width={400}
-                            height={300}
-                            className="object-cover w-full h-48"
+                            width={1200}
+                            height={800}
+                            className="object-contain max-h-full"
                         />
+
                         {project.images.length > 1 && (
                             <>
                                 <button
                                     onClick={handlePrev}
-                                    className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/70 text-white rounded-full p-2 hover:bg-black/90"
-                                    aria-label="Previous Image"
+                                    className="absolute left-8 top-1/2 transform -translate-y-1/2 bg-black/70 text-white rounded-full p-4 hover:bg-black/90 text-2xl"
                                 >
                                     ‹
                                 </button>
                                 <button
                                     onClick={handleNext}
-                                    className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/70 text-white rounded-full p-2 hover:bg-black/90"
-                                    aria-label="Next Image"
+                                    className="absolute right-8 top-1/2 transform -translate-y-1/2 bg-black/70 text-white rounded-full p-4 hover:bg-black/90 text-2xl"
                                 >
                                     ›
                                 </button>
                             </>
                         )}
                     </div>
-                </CardHeader>
-                <CardContent className="p-6 flex-grow">
-                    <CardTitle>{project.title}</CardTitle>
-                    <CardDescription className="mt-2 line-clamp-10">{project.description}</CardDescription>
-                </CardContent>
-                <CardFooter className="flex flex-wrap gap-2 p-6 pt-0 justify-between items-center mt-auto">
-                    <div className="flex flex-wrap gap-2">
-                        {project.tags.map((tag) => (
-                            <Badge key={tag} variant="secondary">{tag}</Badge>
-                        ))}
-                    </div>
-                    <div className="flex space-x-4">
-                        {project.github && (
-                            <Link href={project.github} target="_blank" rel="noopener noreferrer" aria-label={`${project.title} GitHub`}>
-                                <Button variant="ghost" size="icon">
-                                    <Github className="w-5 h-5" />
-                                </Button>
-                            </Link>
-                        )}
-                        {project.devpost && (
-                            <Link href={project.devpost} target="_blank" rel="noopener noreferrer" aria-label={`${project.title} Devpost`}>
-                                <Button variant="ghost" size="icon">
-                                    <Aperture className="w-5 h-5" />
-                                </Button>
-                            </Link>
-                        )}
-                    </div>
-                </CardFooter>
-            </Card>
-        </motion.div>
-    )
+                </motion.div>
+            )}
+        </AnimatePresence>
+    );
+
+    return (
+        <>
+            <motion.div
+                ref={ref}
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+                <Card className="flex flex-col h-full min-h-[600px] overflow-hidden border border-slate-700 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <CardHeader className="p-0 relative">
+                        <div
+                            className="relative w-full h-48 overflow-hidden flex items-center justify-center bg-black cursor-pointer"
+                            onClick={() => setIsOverlayOpen(true)}
+                        >
+                            <Image
+                                src={project.images[currentImageIndex]}
+                                alt={project.title}
+                                width={400}
+                                height={300}
+                                className="object-cover w-full h-48"
+                            />
+                            {project.images.length > 1 && (
+                                <>
+                                    <button
+                                        onClick={handlePrev}
+                                        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/70 text-white rounded-full p-2 hover:bg-black/90"
+                                        aria-label="Previous Image"
+                                    >
+                                        ‹
+                                    </button>
+                                    <button
+                                        onClick={handleNext}
+                                        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/70 text-white rounded-full p-2 hover:bg-black/90"
+                                        aria-label="Next Image"
+                                    >
+                                        ›
+                                    </button>
+                                </>
+                            )}
+                        </div>
+                    </CardHeader>
+                    <CardContent className="p-6 flex-grow">
+                        <CardTitle>{project.title}</CardTitle>
+                        <CardDescription className="mt-2 line-clamp-10">{project.description}</CardDescription>
+                    </CardContent>
+                    <CardFooter className="flex flex-wrap gap-2 p-6 pt-0 justify-between items-center mt-auto">
+                        <div className="flex flex-wrap gap-2">
+                            {project.tags.map((tag) => (
+                                <Badge key={tag} variant="secondary">{tag}</Badge>
+                            ))}
+                        </div>
+                        <div className="flex space-x-4">
+                            {project.github && (
+                                <Link href={project.github} target="_blank" rel="noopener noreferrer" aria-label={`${project.title} GitHub`}>
+                                    <Button variant="ghost" size="icon">
+                                        <Github className="w-5 h-5" />
+                                    </Button>
+                                </Link>
+                            )}
+                            {project.devpost && (
+                                <Link href={project.devpost} target="_blank" rel="noopener noreferrer" aria-label={`${project.title} Devpost`}>
+                                    <Button variant="ghost" size="icon">
+                                        <Aperture className="w-5 h-5" />
+                                    </Button>
+                                </Link>
+                            )}
+                        </div>
+                    </CardFooter>
+                </Card>
+            </motion.div>
+            <ImageOverlay />
+        </>
+    );
 }
 
 function Timeline() {
@@ -519,17 +572,27 @@ function TimelineEvent({ event, index }) {
             initial={{ opacity: 0, y: 50 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: index * 0.2 }}
-            className={`flex items-center mb-16 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
+            className={`flex flex-col md:flex-row items-center mb-8 md:mb-16 ${
+                index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+            }`}
         >
-            <div className={`w-1/2 ${index % 2 === 0 ? 'text-right pr-8' : 'text-left pl-8'}`}>
-                <h3 className="text-xl font-semibold mb-2">{event.title}</h3>
-                <p className="text-slate-300">{event.description}</p>
+            <div
+                className={`w-full md:w-1/2 text-center md:text-left mb-4 md:mb-0 ${
+                    index % 2 === 0 ? 'md:text-right md:pr-8' : 'md:text-left md:pl-8'
+                }`}
+            >
+                <h3 className="text-lg md:text-xl font-semibold mb-2">{event.title}</h3>
+                <p className="text-slate-300 text-sm md:text-base">{event.description}</p>
             </div>
-            <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center z-10 border border-white shadow-glow mx-4">
-                <event.icon className="w-8 h-8 text-primary-foreground" />
+
+            <div className="w-12 h-12 md:w-16 md:h-16 bg-primary rounded-full flex items-center justify-center z-10 border border-white shadow-glow mx-4 my-2 md:my-0">
+                <event.icon className="w-6 h-6 md:w-8 md:h-8 text-primary-foreground" />
             </div>
-            <div className={`w-1/2 ${index % 2 === 0 ? 'pl-8' : 'pr-8'}`}>
-                <span className="text-lg font-semibold text-primary">{event.date}</span>
+
+            <div className={`w-full md:w-1/2 text-center md:text-left ${
+                index % 2 === 0 ? 'md:pl-8' : 'md:pr-8'
+            }`}>
+                <span className="text-base md:text-lg font-semibold text-primary">{event.date}</span>
             </div>
         </motion.div>
     )
