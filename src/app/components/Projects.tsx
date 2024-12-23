@@ -26,7 +26,7 @@ export function Projects() {
                             <Sparkle className="inline-block w-8 h-8 text-primary mb-1" /> My Projects
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
-                            {projects.map((project, index) => (
+                            {projects.toReversed().map((project, index) => (
                                 <ProjectCard key={project.id} project={project} index={index} />
                             ))}
                         </div>
