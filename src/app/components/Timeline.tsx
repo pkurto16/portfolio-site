@@ -4,6 +4,7 @@ import {motion} from "framer-motion";
 import {Calendar} from "lucide-react";
 import {timelineEvents} from "@/app/data/timelineEvents";
 import {useInView} from "react-intersection-observer";
+import {JSX} from "react";
 
 export function Timeline() {
     return (
@@ -19,7 +20,7 @@ export function Timeline() {
                         <Calendar className="inline-block w-8 h-8 text-primary mb-1" /> My Journey
                     </h2>
                     <div className="relative">
-                        {timelineEvents.map((event, index) => (
+                        {timelineEvents.map((event: any, index) => (
                             <TimelineEvent key={event.id} event={event} index={index} />
                         ))}
                     </div>
@@ -30,7 +31,18 @@ export function Timeline() {
 }
 
 
-function TimelineEvent({ event, index }) {
+interface TimelineEventProps {
+    event: {
+        id: string | number;
+        title: string;
+        description: string;
+        date: string;
+        icon: React.ComponentType<{ className?: string }>;
+    };
+    index: number;
+}
+
+function TimelineEvent({ event, index }: TimelineEventProps): JSX.Element {
     const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 })
 
     return (

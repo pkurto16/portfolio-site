@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import {createSlice, createAsyncThunk} from '@reduxjs/toolkit';
 import type { EmailData } from '@/types/email';
 
 interface EmailState {
@@ -49,9 +49,9 @@ const emailSlice = createSlice({
             .addCase(sendEmail.fulfilled, (state: EmailState) => {
                 state.status = 'succeeded';
             })
-            .addCase(sendEmail.rejected, (state : EmailState, action: any) => {
+            .addCase(sendEmail.rejected, (state : EmailState) => {
                 state.status = 'failed';
-                state.error = action.error.message ?? 'Failed to send email';
+                state.error = 'Failed to send email';
             });
     },
 });

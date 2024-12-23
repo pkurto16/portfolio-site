@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { motion } from "framer-motion";
 import { Mail } from "lucide-react";
 import { useAppDispatch, useAppSelector } from '@/lib/hooks';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -36,7 +36,8 @@ export function Contact() {
             });
             // Reset form
             setFormData({ name: '', email: '', message: '' });
-        } catch (error) {
+        } catch (err) {
+            console.log(err)
             toast({
                 title: "Error",
                 description: "Failed to send message. Please try again.",

@@ -1,7 +1,7 @@
 'use client'
 
 import {AnimatePresence, motion} from "framer-motion";
-import {Aperture, Github, MessageSquareCode, Sparkle, X} from "lucide-react";
+import {Github, MessageSquareCode, Sparkle, X} from "lucide-react";
 import {useState} from "react";
 import {useInView} from "react-intersection-observer";
 import Image from "next/image";
@@ -37,17 +37,17 @@ export function Projects() {
     )
 }
 
-function ProjectCard({ project, index }) {
+function ProjectCard({ project, index }: { project: any; index: number }) {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [isOverlayOpen, setIsOverlayOpen] = useState(false);
     const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
-    const handleNext = (e) => {
+    const handleNext = (e: any) => {
         e.stopPropagation();
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % project.images.length);
     };
 
-    const handlePrev = (e) => {
+    const handlePrev = (e: any) => {
         e.stopPropagation();
         setCurrentImageIndex((prevIndex) =>
             prevIndex === 0 ? project.images.length - 1 : prevIndex - 1
@@ -146,7 +146,7 @@ function ProjectCard({ project, index }) {
                     </CardContent>
                     <CardFooter className="flex flex-wrap gap-2 p-6 pt-0 justify-between items-center mt-auto">
                         <div className="flex flex-wrap gap-2">
-                            {project.tags.map((tag) => (
+                            {project.tags.map((tag: any) => (
                                 <Badge key={tag} variant="secondary">{tag}</Badge>
                             ))}
                         </div>

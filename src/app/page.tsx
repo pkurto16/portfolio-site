@@ -1,11 +1,13 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import {useState, useEffect, ComponentProps} from 'react'
 import { motion, AnimatePresence} from 'framer-motion'
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
-import { Calendar, Mail,
-    Menu, X, Monitor, Cpu, Loader2, Aperture} from 'lucide-react'
+import {
+    Calendar, Mail,
+    Menu, X, Monitor, Cpu, Loader2, Aperture, LucideIcon
+} from 'lucide-react'
 import {BackgroundDecorations} from "./components/BackgroundDecorations";
 import {Contact} from "@/app/components/Contact";
 import {Hero} from "./components/Hero"
@@ -109,9 +111,19 @@ export default function Home() {
     )
 }
 
-function NavLink({ href, icon: Icon, children, ...props }) {
+interface NavLinkProps extends Omit<ComponentProps<typeof Link>, 'icon'> {
+    href: string;
+    icon: LucideIcon;
+    children: React.ReactNode;
+}
+
+function NavLink({ href, icon: Icon, children, ...props }: NavLinkProps) {
     return (
-        <Link href={href} {...props} className="text-slate-300 hover:text-primary transition-colors block flex items-center space-x-2">
+        <Link
+            href={href}
+            {...props}
+            className="text-slate-300 hover:text-primary transition-colors block flex items-center space-x-2"
+        >
             <Icon className="w-5 h-5" />
             <span>{children}</span>
         </Link>
