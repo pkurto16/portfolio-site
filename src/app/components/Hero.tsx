@@ -31,7 +31,7 @@ export function Hero() {
                     <h1 className="text-4xl md:text-6xl font-bold mb-4 tracking-tight">
                         <span className="text-primary">Peter Kurto</span>
                     </h1>
-                    <p className="mb-8 text-slate-300 max-w-[90%] mx-auto text-[clamp(1rem, 2.5vw, 1.5rem)] md:text-xl leading-normal">
+                    <p className="text-sm sm:text-lg md:text-2xl lg:text-3xl mb-8 text-slate-300 max-w-[80%] mx-auto text-[clamp(1rem, 2.5vw, 1.5rem)] md:text-[clamp(1.5rem, 3vw, 3rem)] leading-tight">
                         Software Developer | Problem Solver | Tech Enthusiast
                     </p>
                     <div className="flex justify-center space-x-4">
