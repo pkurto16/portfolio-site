@@ -1,14 +1,60 @@
 'use client'
 
-import {motion} from "framer-motion";
-import {Mail} from "lucide-react";
-import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from "@/components/ui/card";
-import {Label} from "@/components/ui/label";
-import {Input} from "@/components/ui/input";
-import {Textarea} from "@/components/ui/textarea";
-import {Button} from "@/components/ui/button";
+import { useState } from 'react';
+import { motion } from "framer-motion";
+import { Mail } from "lucide-react";
+import { useAppDispatch, useAppSelector } from '@/lib/hooks';
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
+import { sendEmail } from '@/features/email/emailSlice';
+import type { AppDispatch, RootState } from '@/lib/store';
+import type { EmailData } from '@/types/email';
+import { useToast } from "@/hooks/use-toast";
 
 export function Contact() {
+    const dispatch = useAppDispatch<AppDispatch>();
+    const emailStatus = useAppSelector((state: RootState) => state.email.status);
+    const { toast } = useToast();
+
+    const [formData, setFormData] = useState<EmailData>({
+        name: '',
+        email: '',
+        message: ''
+    });
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+
+        try {
+            await dispatch(sendEmail(formData)).unwrap();
+            toast({
+                title: "Success!",
+                description: "Your message has been sent successfully.",
+            });
+            // Reset form
+            setFormData({ name: '', email: '', message: '' });
+        } catch (error) {
+            toast({
+                title: "Error",
+                description: "Failed to send message. Please try again.",
+                variant: "destructive",
+            });
+        }
+    };
+
+    const handleChange = (
+        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    ) => {
+        const { id, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [id]: value
+        }));
+    };
+
     return (
         <section id="contact" className="py-20 bg-gradient-to-b from-slate-900 to-slate-800">
             <motion.div
@@ -29,27 +75,50 @@ export function Contact() {
                             </CardDescription>
                         </CardHeader>
                         <CardContent>
-                            <form className="space-y-4">
+                            <form onSubmit={handleSubmit} className="space-y-4">
                                 <div>
                                     <Label htmlFor="name">Name</Label>
-                                    <Input id="name" placeholder="Your name" />
+                                    <Input
+                                        id="name"
+                                        value={formData.name}
+                                        onChange={handleChange}
+                                        placeholder="Your name"
+                                        required
+                                    />
                                 </div>
                                 <div>
                                     <Label htmlFor="email">Email</Label>
-                                    <Input id="email" type="email" placeholder="Your email" />
+                                    <Input
+                                        id="email"
+                                        type="email"
+                                        value={formData.email}
+                                        onChange={handleChange}
+                                        placeholder="Your email"
+                                        required
+                                    />
                                 </div>
                                 <div>
                                     <Label htmlFor="message">Message</Label>
-                                    <Textarea id="message" placeholder="Your message" />
+                                    <Textarea
+                                        id="message"
+                                        value={formData.message}
+                                        onChange={handleChange}
+                                        placeholder="Your message"
+                                        required
+                                    />
                                 </div>
+                                <Button
+                                    type="submit"
+                                    className="w-full"
+                                    disabled={emailStatus === 'loading'}
+                                >
+                                    {emailStatus === 'loading' ? 'Sending...' : 'Send Message'}
+                                </Button>
                             </form>
                         </CardContent>
-                        <CardFooter>
-                            <Button type="submit" className="w-full">Send Message</Button>
-                        </CardFooter>
                     </Card>
                 </div>
             </motion.div>
         </section>
-    )
+    );
 }
