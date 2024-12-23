@@ -20,7 +20,7 @@ export function Timeline() {
                         <Calendar className="inline-block w-8 h-8 text-primary mb-1" /> My Journey
                     </h2>
                     <div className="relative">
-                        {timelineEvents.map((event: any, index) => (
+                        {timelineEvents.toReversed().map((event: any, index) => (
                             <TimelineEvent key={event.id} event={event} index={index} />
                         ))}
                     </div>
