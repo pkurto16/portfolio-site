@@ -56,7 +56,7 @@ Primary goals:
 ---
 
 ## Live Demo
-
+This site is currently deployed:
 - **Visit:** [pkurto.com](https://pkurto.com)
 
 Explore my portfolio site in real time, view my projects, timeline, and contact form. Let me know what you think!
